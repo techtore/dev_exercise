@@ -10,6 +10,7 @@ def random_password
 end
 
 user_seeds = [
+  {first_name: "Dev", last_name: "Challenger", email: "dev@dundermifflin.com", password: "password1234", password_confirmation: "password1234"},
   {first_name: "Jim", last_name: "Halpert", email: "jim@dundermifflin.com", password: random_password, password_confirmation: random_password},
   {first_name: "Pam", last_name: "Halpert", email: "pam@dundermifflin.com", password: random_password, password_confirmation: random_password},
   {first_name: "Michael", last_name: "Scott", email: "michael@dundermifflin.com", password: random_password, password_confirmation: random_password},
