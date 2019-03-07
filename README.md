@@ -12,7 +12,7 @@ In the following section you can review the Tasks ahead of you. Please do your b
 
 1. Implement functionality to allow for Searching of Organizations. It is up to you on how you would implement the searching mechanism. The Search feature should return an ordered list of Organiziations sorted in ascending order.
 
-2. Implement functionality that will allow for a Class to be treated as a Join table. This Class should be called Memberships as an example. It's purpose is to allow and Organization to have many Users and to allow Many Users to belong to an Organization.
+2. Implement functionality that will allow for a Class to be treated as a Join table. This Class should be called Memberships as an example. It's purpose is to allow an Organization to have many Users and to allow Many Users to belong to an Organization.
 
 3. **Extra Credit** - Enhance the Class Organizations to allow for Children Organizations. As an Example:
 
