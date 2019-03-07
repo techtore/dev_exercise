@@ -25,7 +25,7 @@ user_seeds.each do |user_seed|
   user = User.create(first_name: user_seed[:first_name], last_name: user_seed[:last_name], email: user_seed[:email], password: user_seed[:password], password_confirmation: user_seed[:password_confirmation])
 end
 
-10.times do
+40.times do
   puts "Creating Organizations"
   org = Organization.create(name: Faker::Company.name, description: Faker::Company.catch_phrase)
 end
