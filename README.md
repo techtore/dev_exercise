@@ -57,7 +57,7 @@ Execute `rake spec` to run the unit test suite.
 ## Other Things To Consider
 
 1. `git` history: A consistent and accurate git history greatly aids in the code review process -
-   which is core to Healthify's technical workflow.
+   which is core to Listen360's technical workflow.
 2. Clarity & Documentation: Your code should be expressive and understandable. Solid unit tests usually
    provide enough documentation, but aren't always sufficient. Whether via unit tests, comments, exceptionally
    expressive code or all of the above, make sure you submit easy to understand code!
