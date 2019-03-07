@@ -45,7 +45,7 @@ Complete the following to get the existing application up and running.
 2. Install dependencies and setup DB by running the setup script: `bin/setup`.
 3. You will login with the following user. `username: dev@dundermifflin.com \ password: password1234`
 4. When running `bin/setup`, this should start/restart any running Rails server. In the event you do not use `bin/setup` start the local server with: `bundle exec rails server`.
-5. Visit 'localhost:3000' in your web browser of choice.
+5. Visit http://localhost:3000/ in your web browser of choice.
 
 ## Tests
 
