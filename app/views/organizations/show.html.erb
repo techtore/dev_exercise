@@ -1,0 +1,6 @@
+<% provide(:title, @organization.name) %>
+
+<%= @organization.name %>
+<%= link_to("Back to All Organizations", organizations_path) %>
+
+Description: <%= @organization.description %>
