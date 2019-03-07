@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+user_seeds = [
+  {first_name: "", last_name: "", email: "", password}
+]
+organization_seeds = [
+  {name: "", description: "", users: []}
+]
