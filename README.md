@@ -4,7 +4,7 @@ Hello there! We're excited to have you try out our code challenge. Below, you'll
 
 ## Context
 
-The premise of this challenge is to help assess you knowledge of the Ruby on Rails framework, HTML/CSS/JS and Postgresql. This challenege will start you out with the core Classes you will need to get started, as well as seed data for you to work with. There is basic Test coverage leveraging the RSpec testing framework. You can draw inspiration from the existing tests that we have provided.
+The premise of this challenge is to help assess your knowledge of the Ruby on Rails framework, HTML/CSS/JS and Postgresql. This challenege will start you out with the core Classes you will need to get started, as well as seed data for you to work with. There is basic Test coverage leveraging the RSpec testing framework. You can draw inspiration from the existing tests that we have provided.
 
 In the following section you can review the Tasks ahead of you. Please do your best to complete all of the Tasks to the best of your ability. While working through the Challenge Tasks keep in mind, while knowledge is first and foremost on our minds, best practices and code style is equally as important.
 
