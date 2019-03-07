@@ -28,8 +28,8 @@ RSpec.describe User, type: :model do
   end
 
   it "is invalid with a duplicate email" do
-    User.create(first_name: "Robo", last_name: "Tron", email: "robotron@dundermifflin.com", password: "password", password_confirmation: "password")
-    user = User.new(first_name: "Robo", last_name: "Tron", email: "robotron@dundermifflin.com", password: "password", password_confirmation: "password")
+    FactoryBot.create(:user, email: "robotron@dundermifflin.com")
+    user = FactoryBot.build(:user, email: "robotron@dundermifflin.com")
 
     user.valid?
 
