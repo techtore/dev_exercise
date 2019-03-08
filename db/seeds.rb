@@ -6,24 +6,24 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 def random_password
-  @password ||= rand(100000...900000).to_s
+  rand(100000...900000).to_s
 end
 
 user_seeds = [
   {first_name: "Dev", last_name: "Challenger", email: "dev@dundermifflin.com", password: "password1234", password_confirmation: "password1234"},
-  {first_name: "Jim", last_name: "Halpert", email: "jim@dundermifflin.com", password: random_password, password_confirmation: random_password},
-  {first_name: "Pam", last_name: "Halpert", email: "pam@dundermifflin.com", password: random_password, password_confirmation: random_password},
-  {first_name: "Michael", last_name: "Scott", email: "michael@dundermifflin.com", password: random_password, password_confirmation: random_password},
-  {first_name: "Dwight", last_name: "Schrute", email: "dwight@dundermifflin.com", password: random_password, password_confirmation: random_password},
-  {first_name: "Kevin", last_name: "Malone", email: "kevin@dundermifflin.com", password: random_password, password_confirmation: random_password},
-  {first_name: "Andrew", last_name: "Bernard", email: "andy@dundermifflin.com", password: random_password, password_confirmation: random_password},
-  {first_name: "Stanley", last_name: "Hudson", email: "stanley@dundermifflin.com", password: random_password, password_confirmation: random_password},
-  {first_name: "Phyllis", last_name: "Vance", email: "phyllis@dundermifflin.com", password: random_password, password_confirmation: random_password},
+  {first_name: "Jim", last_name: "Halpert", email: "jim@dundermifflin.com", password: random_password},
+  {first_name: "Pam", last_name: "Halpert", email: "pam@dundermifflin.com", password: random_password},
+  {first_name: "Michael", last_name: "Scott", email: "michael@dundermifflin.com", password: random_password},
+  {first_name: "Dwight", last_name: "Schrute", email: "dwight@dundermifflin.com", password: random_password},
+  {first_name: "Kevin", last_name: "Malone", email: "kevin@dundermifflin.com", password: random_password},
+  {first_name: "Andrew", last_name: "Bernard", email: "andy@dundermifflin.com", password: random_password},
+  {first_name: "Stanley", last_name: "Hudson", email: "stanley@dundermifflin.com", password: random_password},
+  {first_name: "Phyllis", last_name: "Vance", email: "phyllis@dundermifflin.com", password: random_password},
 ]
 
 user_seeds.each do |user_seed|
-  puts "Creating #{user_seed[:first_name]} #{user_seed[:last_name]} using the password #{user_seed[:password]} : #{user_seed[:password_confirmation]}"
-  user = User.create(first_name: user_seed[:first_name], last_name: user_seed[:last_name], email: user_seed[:email], password: user_seed[:password], password_confirmation: user_seed[:password_confirmation])
+  puts "Creating #{user_seed[:first_name]} #{user_seed[:last_name]} using the password #{user_seed[:password]} : #{user_seed[:password]}"
+  user = User.create(first_name: user_seed[:first_name], last_name: user_seed[:last_name], email: user_seed[:email], password: user_seed[:password], password_confirmation: user_seed[:password])
 end
 
 40.times do
