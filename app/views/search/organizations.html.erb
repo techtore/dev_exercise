@@ -1,4 +1,8 @@
-<h3>Organizations Search Results</h3>
+<h2>Organizations Search Results</h2>
+<h3> <%= "Results for #{@search_term}" %> </h3>
 <% @organizations.each do |org| %>
+<li>
     <%= org.name %>
+</li>
+    
 <%end%>
