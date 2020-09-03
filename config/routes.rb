@@ -9,5 +9,8 @@ Rails.application.routes.draw do
 
 	get '/login'     => 'sessions#new'
 	post '/login'    => 'sessions#create'
-	delete '/logout' => 'sessions#destroy'  
+  delete '/logout' => 'sessions#destroy'  
+  
+  get '/search' => 'search#organizations'
+  post '/search' => 'search#organizations'
 end
