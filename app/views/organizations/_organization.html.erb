@@ -1,5 +1,14 @@
-<ul>
-  <li>
-    <%= link_to(organization.name, organization_path(organization)) %>
-  </li>
-</ul>
+<section class="org-container">
+  <div class="org-header">
+    <h1>
+        <%= link_to(organization.name, organization_path(organization)) %>
+    </h1>
+     <hr>
+  </div>
+ 
+    <p class="org-details">
+        <%= organization.description%>
+    </p>
+  </section>
+ 
+
