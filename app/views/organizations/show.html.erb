@@ -1,6 +1,16 @@
-<% provide(:title, @organization.name) %>
 
-<%= @organization.name %>
+
+<div class="org-show">
 <%= link_to("Back to All Organizations", organizations_path) %>
-
-Description: <%= @organization.description %>
+    <% provide(:title, @organization.name) %>
+    <br>  
+    <div class="org-header">
+        <h1>  
+            <%= @organization.name %>
+        </h1>
+    </div>
+     <hr>
+    <p class="org-details">
+        <%= @organization.description %>
+    </p>
+</div>
