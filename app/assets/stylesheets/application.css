@@ -17,7 +17,7 @@
  div.top-nav {
     background-color: #f1f4f4;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    overflow: auto;  
+    overflow: hidden;  
     height: 50px;
     width: 100%;
  }
@@ -33,13 +33,12 @@
      
  }
 
- /* div.user-details {
-    
-    padding: 5px 5px;
- } */
-
 span.down-icon {
     vertical-align: middle;
+}
+
+span.user-icon {
+    vertical-align: middle;   
 }
 
 span.company-details {
@@ -52,4 +51,25 @@ span.company-details {
 
 span.user-info {
     float: right;
+    padding: 5px 5px;
+}
+
+div.dropdown-content {
+    display: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.button {
+    border-radius: 15px;
+    background-color: orange;
+    color: white;
+    border:0.16em solid rgba(255,255,255,0);
+}
+
+.search-field {
+    border-radius: 5px;
+    border:0.16em solid rgba(255,255,255,0);
 }

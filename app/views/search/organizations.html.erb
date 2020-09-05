@@ -1,12 +1,13 @@
-<%= link_to("Back to All Organizations", organizations_path) %>
+<p><%= link_to("Back to All Organizations", organizations_path) %></p>
 <div class="search-results">
     <h2>Organizations Search Results</h2>
     <h3> <%= "Results for #{@search_term}" %>:</h3>
+   
     <% @organizations.each do |org| %>
-    <h4>
+     <h4>
         <%= link_to(org.name, organization_path(org.id)) %>
-    </h4>
-        
+        <hr>
+    </h4>   
     <%end%>
 </div>
 
