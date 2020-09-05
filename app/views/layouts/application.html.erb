@@ -11,32 +11,31 @@
 
   <body>
     <header>
-      <div>
-      
-      </div>
-        <div class="search">
-          <%= form_tag search_path, :method => 'post' do %>
-            <%= text_field_tag :search, params[:search] %>
-            <%= submit_tag "Search for Organization", name: nil %> 
-          <% end %>
-        
+      <nav>
+        <div class="top-nav">
+            <div class="search">
+              <%= form_tag search_path, :method => 'post' do %>
+                <%= text_field_tag :search, params[:search] %>
+                <%= submit_tag "Search for Organization", name: nil %> 
+              <% end %>
+          </div> 
+        <% if current_user %>
+        <!-- current_user will return true if a user is logged in -->
+        <%= "#{current_user.first_name} #{current_user.last_name}" %> | <%= link_to 'Home', root_path %> | <%= link_to 'Log Out', logout_path, method: :delete %>
+      <% else %>
+        <!-- not logged in -->
+        <%= link_to 'Home', root_path %> | <%= link_to 'Log In', login_path %> or <%= link_to 'Sign Up', new_account_path %>
+      <% end %>   
         </div>
+      </nav>
     </header>
-    <% if current_user %>
-      <!-- current_user will return true if a user is logged in -->
-      <%= "#{current_user.first_name} #{current_user.last_name}" %> | <%= link_to 'Home', root_path %> | <%= link_to 'Log Out', logout_path, method: :delete %>
-    <% else %>
-      <!-- not logged in -->
-      <%= link_to 'Home', root_path %> | <%= link_to 'Log In', login_path %> or <%= link_to 'Sign Up', new_account_path %>
-    <% end %>
-    <hr>
-    <% if notice %>
-      <%= notice %>
-    <% end %>
-    
-    <% if alert %>
-      <%= alert %>
-    <% end %>
-    <%= yield %>
+      <% if notice %>
+        <%= notice %>
+      <% end %>
+      
+      <% if alert %>
+        <%= alert %>
+      <% end %>
+      <%= yield %>
   </body>
 </html>
