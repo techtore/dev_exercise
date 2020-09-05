@@ -33,20 +33,8 @@
      
  }
 
-span.down-icon {
+span.down-icon, span.user-icon, span.company-details, .logo {
     vertical-align: middle;
-}
-
-span.user-icon {
-    vertical-align: middle;   
-}
-
-span.company-details {
-    vertical-align: middle;
-}
-
-.logo {
-    vertical-align: middle; 
 }
 
 span.user-info {
